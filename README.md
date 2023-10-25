@@ -21,7 +21,7 @@ on:
 jobs:
   autoupdate:
     name: autoupdate
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - uses: docker://chinthakagodawita/autoupdate-action:v1
         env:
@@ -90,7 +90,7 @@ on:
 jobs:
   autoupdate:
     name: autoupdate
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
     steps:
       - uses: docker://chinthakagodawita/autoupdate-action:v1
         env:
@@ -148,7 +148,7 @@ Here's a screenshot:
 - Branch updates events caused by this action will not trigger any subsequent workflows
   - [This is a documented limitation](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows#about-workflow-events) for all GH actions:
     > An action in a workflow run can't trigger a new workflow run. For example, if an action pushes code using the repository's GITHUB_TOKEN, a new workflow will not run even when the repository contains a workflow configured to run when push events occur.
-  - There is [an open issue in the Github community forum](https://github.community/t5/GitHub-Actions/Triggering-a-new-workflow-from-another-workflow/td-p/31676) tracking this
+  - There is [an open issue in the Github community forum](https://github.com/orgs/community/discussions/43427) tracking this
 
 ## Coming soon
 
